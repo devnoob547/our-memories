@@ -48,12 +48,12 @@ function Menu({ item }: MenuProps) {
           href="/memories"
           className="text-sm flex flex-col justify-center items-center gap-2 font-light w-24 py-4 rounded-md transition-all duration-300 text-green-400 hover:bg-zinc-700"
         >
-          <Film />
+          <Mail />
           Mensagens
         </Link>
         ) : (
         <Link
-          href="/memories"
+          href="/messages"
           className="text-sm flex flex-col justify-center items-center gap-2 font-light w-24 py-4 rounded-md transition-all duration-300 hover:bg-zinc-700 hover:text-green-400"
         >
           <Mail />

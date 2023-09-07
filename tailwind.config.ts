@@ -17,10 +17,15 @@ const config: Config = {
         'slow-to-right': {
           '0%': { transform: 'translate(-20rem)', opacity: '0' },
           '100%': { transform: 'rotate(0)', opacity: '1' },
+        },
+        'show': {
+          '0%': { opacity: '0'},
+          '100%': { opacity: '1' }
         }
       },
       animation: {
         'slow-to-right': 'slow-to-right 1s ease-in-out',
+        'show': 'show 1s ease-in-out',
       }
     },
   },

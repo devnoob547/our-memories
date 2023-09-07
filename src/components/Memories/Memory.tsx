@@ -14,7 +14,7 @@ function Memory({ img, title, description, alt }: MemoryProps) {
   const [like, setLike] = useState(false)
 
   return (
-    <div className="bg-zinc-700 p-6 rounded-md flex flex-col justify-center gap-2 shadow-md shadow-zinc-900">
+    <div className="bg-zinc-700 p-6 rounded-md flex flex-col justify-center gap-2 shadow-md shadow-zinc-900 animate-show">
       <Image src={img} alt={alt} className="rounded-md" />
       <h1 className="text-lg font-semibold">{title}</h1>
       <p className="mt-2 font-light text-base">{description}</p>
