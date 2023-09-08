@@ -1,9 +1,17 @@
 'use client'
-import { FormEvent, useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { prisma } from '@/app/api/messages/route'
+import { FieldValues, useForm } from 'react-hook-form'
 
 export default function AddMessage() {
   const { register, handleSubmit } = useForm()
+
+  async function addMessage(data: FieldValues) {
+    const response = await fetch('/api/messages/add', {
+      method: 'POST'
+    })
+    
+    console.log(response)
+  }
 
   return (
     <div className="flex min-h-screen min-w-full items-center justify-center flex-col space-y-6">
@@ -15,7 +23,7 @@ export default function AddMessage() {
         <form 
           action=""
           className="flex items-center justify-center flex-col gap-4"
-          onSubmit={handleSubmit((data) => console.log(data))}
+          onSubmit={handleSubmit(addMessage)}
         >
           <input type="text" {...register('name')} placeholder="Nome" className="bg-zinc-900 p-4 rounded-md text-sm border border-zinc-600 focus:border-zinc-400 transition-colors duration-300 outline-none" />
           <textarea placeholder="Mensagem" {...register('message')} rows={5} className="bg-zinc-900 p-4 rounded-md text-sm border border-zinc-600 resize-none w-full focus:border-zinc-400 transition-colors duration-300 outline-none" />
