@@ -1,9 +1,16 @@
 import { Message } from "./Message"
 
-function MainMessages() {
+async function MainMessages() {
+  const res = await fetch('http://localhost:3000/api/messages', {
+    next: {
+      revalidate: 30
+    }
+  })
+  const message = await res.json()
+
   return (
     <div className="p-8">
-      <Message message="Parabens!!" name="Daniel" />
+      <Message message={message.message} name={message.name} />
     </div>
   )
 }
