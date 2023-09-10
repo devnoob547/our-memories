@@ -14,5 +14,5 @@ export async function POST(req: Request) {
     data: json
   })
 
-  return NextResponse.json(message)
+  return NextResponse.json({ status: 'ok' })
 }
