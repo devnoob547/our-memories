@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { NextRequest , NextResponse } from 'next/server'
 
-export const prisma = new PrismaClient();
+const prisma = new PrismaClient();
 
 type MessageData = {
   message: string;
