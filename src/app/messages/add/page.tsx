@@ -30,8 +30,8 @@ export default function AddMessage() {
           className="flex items-center justify-center flex-col gap-4"
           onSubmit={handleSubmit(addMessage)}
         >
-          <input type="text" {...register('name')} placeholder="Nome" className="bg-zinc-900 p-4 rounded-md text-sm border border-zinc-600 focus:border-zinc-400 transition-colors duration-300 outline-none" />
-          <textarea placeholder="Mensagem" {...register('message')} rows={5} className="bg-zinc-900 p-4 rounded-md text-sm border border-zinc-600 resize-none w-full focus:border-zinc-400 transition-colors duration-300 outline-none" />
+          <input type="text" required={true} {...register('name')} placeholder="Nome" className="bg-zinc-900 p-4 rounded-md text-sm border border-zinc-600 focus:border-zinc-400 transition-colors duration-300 outline-none" />
+          <textarea placeholder="Mensagem" required={true} {...register('message')} rows={5} className="bg-zinc-900 p-4 rounded-md text-sm border border-zinc-600 resize-none w-full focus:border-zinc-400 transition-colors duration-300 outline-none" />
           <button
             type="submit"
             className="w-full bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition-all duration-300 hover:shadow-md hover:shadow-zinc-900"

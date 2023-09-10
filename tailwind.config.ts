@@ -25,6 +25,7 @@ const config: Config = {
       },
       animation: {
         'slow-to-right': 'slow-to-right 1s ease-in-out',
+        'slow2-to-right': 'slow-to-right 1.5s ease-in-out',
         'show': 'show 1s ease-in-out',
       }
     },
