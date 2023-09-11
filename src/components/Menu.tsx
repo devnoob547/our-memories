@@ -2,7 +2,7 @@ import { HomeIcon, Film, Mail } from "lucide-react";
 import Link from "next/link";
 
 interface MenuProps {
-  item: "home" | "memories" | "messages";
+  item: "home" | "memories";
 }
 
 function Menu({ item }: MenuProps) {
@@ -40,25 +40,7 @@ function Menu({ item }: MenuProps) {
             className="text-sm flex flex-col justify-center items-center gap-2 font-light w-24 py-4 rounded-md transition-all duration-300 hover:bg-zinc-700 hover:text-green-400"
           >
             <Film />
-            Memories
           </Link>
-        )}
-        {item === 'messages' ? (
-          <Link
-          href="/memories"
-          className="text-sm flex flex-col justify-center items-center gap-2 font-light w-24 py-4 rounded-md transition-all duration-300 text-green-400 hover:bg-zinc-700"
-        >
-          <Mail />
-          Mensagens
-        </Link>
-        ) : (
-        <Link
-          href="/messages"
-          className="text-sm flex flex-col justify-center items-center gap-2 font-light w-24 py-4 rounded-md transition-all duration-300 hover:bg-zinc-700 hover:text-green-400"
-        >
-          <Mail />
-          Mensagens
-        </Link>
         )}
       </nav>
     </footer>

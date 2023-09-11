@@ -4,6 +4,7 @@ import Image2 from '../../../public/image-2.jpg';
 import Image3 from '../../../public/image-3.jpg';
 import Image5 from '../../../public/image-5.jpg';
 import Image6 from '../../../public/image-6.jpg';
+import { Info } from 'lucide-react';
 
 function MemoriesMain() {
   return (
@@ -43,6 +44,13 @@ function MemoriesMain() {
         img={Image6}
         date='15/07/2023'
       />
+      <div className='bg-zinc-700 p-4 rounded-lg animate-slow-to-right shadow-md shadow-zinc-900'>
+        <div className='w-full'>
+          <Info className='text-green-400 float-right' size={25} />
+        </div>
+        <p className='font-light text-sm pt-4 text-zinc-100'>cara, por mais q tenhamos tantas memórias incríveis, nada se compara ao nosso amor um pelo outro que vem de Deus, sabe? bem, ja escrevi muitas coisas p vc hj, mas o que eu quero q vc saiba... é que eu te amo, demais e to morrendo de sdd de vc.</p>
+        <p className='font-light text-sm pt-4 text-zinc-100'>espero que a gente possa ir atualizando esse site com novas memórias :)</p>
+      </div>
     </main>
   )
 }
