@@ -1,11 +1,10 @@
 import { ExternalLink, PinIcon } from 'lucide-react';
 import Link from 'next/link';
-
-const now =  new Date();
+import { Present } from './Present';
 
 function Main() {
   return (
-    <main className='h-full p-8 flex flex-col gap-4'>
+    <main className='p-8 mb-24 flex flex-col gap-4'>
       <div className='bg-zinc-700 p-4 rounded-lg animate-slow-to-right shadow-md shadow-zinc-900'>
         <div className='w-full'>
           <PinIcon fill='rgb(74 222 128)' className='rotate-45 text-green-400 float-right' size={20} />
@@ -17,6 +16,7 @@ function Main() {
         <ExternalLink size={40} />
         clique aqui pra ver o que eu fiz p vc :)
       </Link>
+      <Present />
     </main>
   )
 }
