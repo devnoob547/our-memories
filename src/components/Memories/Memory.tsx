@@ -1,8 +1,8 @@
 'use client';
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface MemoryProps {
-  img: any;
+  img: StaticImageData;
   alt: string;
   title: string;
   description: string;

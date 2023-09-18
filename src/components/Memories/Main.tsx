@@ -4,6 +4,7 @@ import Image2 from '../../../public/image-2.jpg';
 import Image3 from '../../../public/image-3.jpg';
 import Image5 from '../../../public/image-5.jpg';
 import Image6 from '../../../public/image-6.jpg';
+import Image8 from '../../../public/image-8.jpg';
 import { Info } from 'lucide-react';
 
 function MemoriesMain() {
@@ -43,6 +44,13 @@ function MemoriesMain() {
         alt='Nós <3'
         img={Image6}
         date='15/07/2023'
+      />
+      <Memory 
+        title='seu aniversário 🤍'
+        description='ai vei, esse dia foi tão perfeito, foi tudo tão encantador, e eu consegui perceber a beleza de um simples sorriso seu, vei, é tão lindo. eu percebi o quanto é bom sorrir com vc, o quanto é bom estar com você, e como eu amo ter vc como minha melhor amiga. sabe ana, acho q esse dia vai ficar na minha memória pra sempre num lugar muito especial, nunca vou esquecer de cada olhar seu. falando em olhar... nossa, nesse dia eu aprendi o quanto admirar seus olhos é bom, seus olhos são lindos, e eu sempre soube disso, mas dessa vez... parece q eu me apaixonei mais ainda por admirar seus olhos.'
+        alt='Nós <3'
+        img={Image8}
+        date='16/09/2023'
       />
       <div className='bg-zinc-700 p-4 rounded-lg animate-slow-to-right shadow-md shadow-zinc-900'>
         <div className='w-full'>
